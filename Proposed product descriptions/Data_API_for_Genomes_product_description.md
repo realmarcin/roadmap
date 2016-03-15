@@ -2,26 +2,8 @@
 
 ## Summary
 
-Currently any software written to use KBase data must be written
-explicitly against a set of data schemas using the KBase IDL schema
-language. The current data schemas are tailored to the specific needs of
-the services that initially created them, but are not a good general
-representation of the underlying concepts. Our current Workspace and IDL
-interfaces expose the service code from these implementation details,
-and make them "brittle" in the sense that any attempted change in the
-schemas will require manually coordinated changes in any system
-component that uses that data. This problem will be exacerbated by the
-potential wave of new "SDK" services from third party developers.
-
-The KBase Data API will address this weakness in our system by providing
-storage and schema-agnostic accessors for the data, which will enable
-the platform to evolve over time by providing a layer of abstraction
-over our current data stores and data schemas. High level API methods
-for accessing data for Genome related types eliminate the need to rely
-directly on specific data schemas for development. The API is versioned
-and documented to provide a clear contract with developers and users
-accessing data within KBase, and will address an endemic difficulty in
-the current platform with updating and comparing analyses through time.
+     Currently any software written to use KBase data must be written explicitly against a set of data schemas using the KBase IDL schema language.  The current data schemas are tailored to the specific needs of the services that initially created them, but are not a good general representation of the underlying concepts. Our current Workspace and IDL interfaces expose the service code from these implementation details, and make them "brittle" in the sense that any attempted change in the schemas will require manually coordinated changes in any system component that uses that data. This problem will be exacerbated by the potential wave of new "SDK" services from third party developers.
+     The KBase Data API will address this weakness in our system by providing storage and schema-agnostic accessors for the data, which will enable the platform to evolve over time by providing a layer of abstraction over our current data stores and data schemas.  High level API methods for accessing data for Genome related types eliminate the need to rely directly on specific data schemas for development.  The API is versioned and documented to provide a clear contract with developers and users accessing data within KBase, and will address an endemic difficulty in the current platform with updating and comparing analyses through time.
 
 ## Description
 
